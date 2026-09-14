@@ -1,20 +1,16 @@
 terraform {
   required_providers {
     aws = {
-      source = "hashicorp/aws"
+      source  = "hashicorp/aws"
+      version = "~> 6.0"
     }
   }
 }
 
 provider "aws" {
-  region = "us-east-1"
+  region = "eu-north-1"
 }
 
 resource "aws_s3_bucket" "lab_bucket" {
-  bucket = "t-aws-lab-divyanshi-2026-unique"
-
-  tags = {
-    Name        = "T-AWS-Lab-Bucket"
-    Environment = "Lab"
-  }
+  bucket = "t-aws-lab-divyanshi-2026"
 }
