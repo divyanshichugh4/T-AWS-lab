@@ -81,3 +81,4 @@ resource "aws_s3_bucket_policy" "lab_bucket_policy" {
     ]
   })
 }
+# Final security configuration for SonarQube analysis
